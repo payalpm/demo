@@ -1,0 +1,45 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: { fontFamily: { poppins: "Poppins" } },
+    colors: {
+      gray: {
+        "100": "#373535",
+        "200": "#0f103f",
+        "300": "#0f0e0e",
+        "400": "rgba(15, 16, 63, 0)",
+        "500": "rgba(255, 255, 255, 0.15)",
+        "600": "rgba(255, 255, 255, 0.7)",
+        "700": "rgba(181, 249, 253, 0.42)",
+        "800": "rgba(0, 0, 0, 0.3)",
+        "900": "rgba(255, 255, 255, 0.4)",
+        "1000": "rgba(255, 255, 255, 0.3)",
+      },
+      white: "#fff",
+      fuchsia: { "100": "#e151f3", "200": "#c432e1" },
+      pink: "rgba(230, 182, 182, 0.3)",
+      indigo: {
+        "100": "#2954a3",
+        "200": "#2f2f8a",
+        "300": "#1c1c65",
+        "400": "rgba(47, 47, 138, 0.6)",
+      },
+      violet: "#c961de",
+    },
+    fontSize: {
+      "3xs": "14px",
+      "2xs": "15px",
+      xs: "16px",
+      sm: "17px",
+      base: "18px",
+      lg: "20px",
+      xl: "24px",
+      "2xl": "30px",
+      "3xl": "40px",
+      "4xl": "55px",
+    },
+    screens: { md: { max: "768px" }, sm: { max: "428px" } },
+  },
+  corePlugins: { preflight: false },
+};
